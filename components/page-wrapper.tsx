@@ -30,8 +30,10 @@ import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
 
 export default function PageWrapper({
+  pageName,
   children,
 }: {
+  pageName: string;
   children: React.ReactNode;
 }) {
   const currentPath = usePathname();
@@ -106,7 +108,10 @@ export default function PageWrapper({
             </DropdownMenu>
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4">{children}</div>
+        <div className="flex flex-1 flex-col gap-4 p-4">
+          <h1 className="font-bold text-3xl">{pageName}</h1>
+          {children}
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );
