@@ -16,6 +16,7 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { navitems } from "@/lib/navItems";
+import { appData } from "@/lib/applicationData";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -36,12 +37,9 @@ export default function Page() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <h1 className="text-2xl font-bold text-blue-500">
+                {appData.appName}
+              </h1>
             </a>
           </div>
           <div className="flex lg:hidden">
