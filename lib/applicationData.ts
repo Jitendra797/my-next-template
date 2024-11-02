@@ -1,6 +1,4 @@
 export const appData = {
   appName: "Bio Bro",
-  appDescription: "",
-  nodes: [],
-  edges: [],
+  appDescription: "Coolest bio app ever",
 };
