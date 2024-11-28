@@ -6,8 +6,8 @@ import PageWrapper from "@/components/page-wrapper";
 import { appData } from "@/lib/applicationData";
 
 export const metadata: Metadata = {
-  title: appData.appName,
-  description: appData.appDescription,
+  title: appData.app_name,
+  description: appData.app_description,
 };
 
 const inter = Inter({ subsets: ["latin"] });

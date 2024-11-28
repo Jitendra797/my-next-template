@@ -1,4 +1,4 @@
 export const appData = {
-  appName: "Bio Bro",
-  appDescription: "Coolest bio app ever",
+  app_name: "Bio Bro",
+  app_description: "Coolest bio app ever",
 };
