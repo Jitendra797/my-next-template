@@ -3,10 +3,11 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import PageWrapper from "@/components/page-wrapper";
+import { appData } from "@/lib/applicationData";
 
 export const metadata: Metadata = {
-  title: "Bio Bro",
-  description: "Bio-Informatics Research Tool",
+  title: appData.appName,
+  description: appData.appDescription,
 };
 
 const inter = Inter({ subsets: ["latin"] });
