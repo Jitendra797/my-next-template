@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { appData } from "@/lib/applicationData";
 import PageWrapper from "@/components/page-wrapper";
 
 export const metadata: Metadata = {
-  title: appData.appName,
-  description: appData.appDescription,
+  title: "Bio Bro",
+  description: "Bio-Informatics Research Tool",
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
