@@ -4,12 +4,9 @@ export interface NavItem {
   // icon?: React.ComponentType;
 }
 
-export const navitems: NavItem[] = [
-  { href: "/dashboard", label: "Dashboard" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
-  { href: "/faq", label: "FAQ" },
+export const navItems: NavItem[] = [
+  { label: "Dashboard", href: "/dashboard" },
+  { label: "Workflows", href: "/workflows" },
   // { href: "/docs", label: "Docs", icon: DocsIcon },
   // { href: "/blog", label: "Blog", icon: BlogIcon },
   // { href: "/news", label: "News", icon: NewsIcon },

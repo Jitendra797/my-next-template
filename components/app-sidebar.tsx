@@ -12,13 +12,9 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { appData } from "@/lib/applicationData";
+import { navItems } from "@/lib/navItems";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navItems = [
-  { label: "Dashboard", href: "/dashboard" },
-  { label: "Workflows", href: "/workflows" },
-];
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const path = usePathname();
