@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { appData } from "@/lib/applicationData";
+import PageWrapper from "@/components/page-wrapper";
 
 export const metadata: Metadata = {
   title: appData.appName,
@@ -25,7 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <PageWrapper>{children}</PageWrapper>
         </ThemeProvider>
       </body>
     </html>
