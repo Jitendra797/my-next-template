@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { navitems } from "@/lib/navItems";
+import { navItems } from "@/lib/navItems";
 import { appData } from "@/lib/applicationData";
 
 const navigation = [
@@ -38,7 +38,7 @@ export default function Page() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <h1 className="text-2xl font-bold text-blue-500">
-                {appData.appName}
+                {appData.app_name}
               </h1>
             </a>
           </div>
@@ -101,7 +101,7 @@ export default function Page() {
                     <Input id="password" type="password" required />
                   </div>
                   <Button type="submit" className="w-full" asChild>
-                    <Link href={navitems[0].href}>Login</Link>
+                    <Link href={navItems[0].href}>Login</Link>
                   </Button>
                   {/* <Button variant="outline" className="w-full">
             Login with Google
@@ -197,7 +197,7 @@ export default function Page() {
                           <Input id="password" type="password" required />
                         </div>
                         <Button type="submit" className="w-full" asChild>
-                          <Link href={navitems[0].href}>Login</Link>
+                          <Link href={navItems[0].href}>Login</Link>
                         </Button>
                         {/* <Button variant="outline" className="w-full">
             Login with Google
