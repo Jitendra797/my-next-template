@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { navItems } from "@/lib/menu-list";
+import { getMenuList } from "@/lib/menu-list";
 import { appData } from "@/lib/applicationData";
 
 const navigation = [
@@ -27,6 +27,7 @@ const navigation = [
 
 export default function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuList = getMenuList();
 
   return (
     <div className="bg-background">
@@ -101,7 +102,7 @@ export default function Page() {
                     <Input id="password" type="password" required />
                   </div>
                   <Button type="submit" className="w-full" asChild>
-                    <Link href={navItems[0].href}>Login</Link>
+                    <Link href={menuList[0].menus[0].href}>Login</Link>
                   </Button>
                   {/* <Button variant="outline" className="w-full">
             Login with Google
@@ -197,7 +198,7 @@ export default function Page() {
                           <Input id="password" type="password" required />
                         </div>
                         <Button type="submit" className="w-full" asChild>
-                          <Link href={navItems[0].href}>Login</Link>
+                          <Link href={menuList[0].menus[0].href}>Login</Link>
                         </Button>
                         {/* <Button variant="outline" className="w-full">
             Login with Google
