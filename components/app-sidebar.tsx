@@ -12,12 +12,13 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { appData } from "@/lib/applicationData";
-import { navItems } from "@/lib/navItems";
+import { getMenuList } from "@/lib/menu-list";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const path = usePathname();
+  const menuList = getMenuList();
   return (
     <Sidebar {...props}>
       <SidebarHeader>
@@ -27,7 +28,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {navItems.map((item) => (
+              {menuList[0].menus.map((item) => (
                 <SidebarMenuItem key={item.label}>
                   <SidebarMenuButton
                     asChild

@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { navItems } from "@/lib/navItems";
+import { navItems } from "@/lib/menu-list";
 import { appData } from "@/lib/applicationData";
 
 const navigation = [
