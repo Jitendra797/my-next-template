@@ -8,7 +8,9 @@ const EmptyViewSection = ({
   return (
     <div className="p-2 w-full space-y-4 space-x-4">
       <h2 className="text-lg font-semibold">{sectionName}</h2>
-      {children}
+      <div>
+        {children}
+      </div>
     </div>
   );
 };
