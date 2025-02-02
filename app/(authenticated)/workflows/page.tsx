@@ -1,5 +1,6 @@
+import CardSectionExample from "@/components/examples/card-section-example";
 import { NewWorkflowForm } from "@/components/examples/new-workflow-form";
-import CardsViewSection from "@/components/sections/cards-view-section";
+import PageSection from "@/components/page-section";
 
 const Page = () => {
   return (
@@ -12,7 +13,9 @@ const Page = () => {
       </div>
 
       <div className="space-y-4">
-        <CardsViewSection sectionName="All Workflows"></CardsViewSection>
+        <PageSection sectionName="All Workflows" sectionType="cards">
+          <CardSectionExample />
+        </PageSection>
       </div>
     </div>
   );

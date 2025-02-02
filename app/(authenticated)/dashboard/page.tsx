@@ -1,6 +1,6 @@
 import { ExampleAreaChart } from "@/components/examples/area-chart";
 import { NewWorkflowForm } from "@/components/examples/new-workflow-form";
-import EmptyViewSection from "@/components/sections/empty-view-section";
+import PageSection from "@/components/page-section";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -18,9 +18,9 @@ const Page = () => {
       </div>
 
       <div className="space-y-4">
-        <EmptyViewSection sectionName="Important Metric">
+        <PageSection sectionName="Important Metric">
           <ExampleAreaChart />
-        </EmptyViewSection>
+        </PageSection>
       </div>
     </div>
   );
