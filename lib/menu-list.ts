@@ -1,9 +1,13 @@
 import {
-  // Box,
+  Anchor,
+  Box,
   Group,
   LayoutGrid,
   LucideIcon,
-  // NotepadText,
+  NotebookTabs,
+  NotepadText,
+  Ship,
+  Users,
   Users2,
 } from "lucide-react";
 
@@ -38,9 +42,45 @@ export function getMenuList(): Group[] {
           submenus: [],
         },
         {
-          href: "/workflows",
-          label: "Workflows",
+          href: "/clients",
+          label: "Clients",
           icon: Users2,
+          submenus: [],
+        },
+        {
+          href: "/enquiries",
+          label: "Enquiries",
+          icon: NotebookTabs,
+          submenus: [],
+        },
+        {
+          href: "/orders",
+          label: "Orders",
+          icon: Box,
+          submenus: [],
+        },
+        {
+          href: "/reports",
+          label: "Reports",
+          icon: NotepadText,
+          submenus: [],
+        },
+        {
+          href: "/ports-of-supply",
+          label: "Ports of Supply",
+          icon: Anchor,
+          submenus: [],
+        },
+        {
+          href: "/vessels",
+          label: "Vessels",
+          icon: Ship,
+          submenus: [],
+        },
+        {
+          href: "/traders",
+          label: "Traders",
+          icon: Users,
           submenus: [],
         },
       ],
