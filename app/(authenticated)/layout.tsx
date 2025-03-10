@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import PageWrapper from "@/components/page-wrapper";
 import { appData } from "@/lib/applicationData";
+import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 
 export const metadata: Metadata = {
   title: appData.app_name,
@@ -26,7 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <PageWrapper>{children}</PageWrapper>
+          <AdminPanelLayout>{children}</AdminPanelLayout>
         </ThemeProvider>
       </body>
     </html>
