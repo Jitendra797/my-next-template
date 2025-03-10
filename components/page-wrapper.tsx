@@ -1,6 +1,5 @@
 "use client";
 
-import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -28,6 +27,7 @@ import {
 } from "./ui/dropdown-menu";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
+import { CustomSidebar } from "./admin-panel/sidebar";
 
 export default function PageWrapper({
   children,
@@ -43,7 +43,7 @@ export default function PageWrapper({
 
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <CustomSidebar />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center justify-between border-b px-4">
           <div className="flex items-center gap-2">
